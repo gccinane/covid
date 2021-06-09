@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+
+.banner {
+	width: 50%;
+	height: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+body {
+	margin: 0 auto;
+	padding: 50px;
+}
