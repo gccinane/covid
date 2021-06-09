@@ -20,6 +20,8 @@ import model.PersonModel;
 @WebServlet("/PersonService")
 public class PersonService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	//Gets data from api response
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			URL url = new URL("http://demo6023489.mockable.io/covid/1/passengers");

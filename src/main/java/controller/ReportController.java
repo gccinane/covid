@@ -21,6 +21,7 @@ public class ReportController extends HttpServlet {
 
 	public ReportController() {}
 	
+	//List all reports from database
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
 		List<ReportModel> lista = reportBO.listReports();
 		
@@ -28,7 +29,8 @@ public class ReportController extends HttpServlet {
 		request.getRequestDispatcher("List.jsp").forward(request, response);
 	
 	}
-
+	
+	//Create a new row inside report table using name and description from parameters
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String name = request.getParameter("name"); 
 		String description = request.getParameter("description");

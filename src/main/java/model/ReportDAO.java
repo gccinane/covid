@@ -18,6 +18,7 @@ public class ReportDAO {
 		connection = new ConnectionFactory().getConnection();
 	}
 	
+	//Inserts a row on database
 	public boolean addReport(ReportModel report) {
 		String sql = "INSERT INTO report(name, description) values(?, ?)";
 		
@@ -34,6 +35,7 @@ public class ReportDAO {
 		
 	}
 	
+	//Lists all reports from database
 	public ArrayList<ReportModel> getReports() {
 		String sql = "select ID, description, name from report";
 		ArrayList<ReportModel> list = new ArrayList<ReportModel>();
