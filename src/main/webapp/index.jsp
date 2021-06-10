@@ -4,15 +4,19 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/index.css" />
+<script src="${pageContext.request.contextPath}/index.js"></script>
 
 <meta charset="ISO-8859-1">
 <title>Travi:D</title>
 </head>
 <body>
+
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
@@ -137,28 +141,34 @@
 	</form>
 	
 	
-	<form action="ReportController" method="post">
+	<form name="reportForm" method="post" onSubmit="return validation()">
 		<input type="text"
 			   id="name" 
 			   name="name"
 			   class="form-control"
 			   style="width: 50%"
-			   placeholder="Digite o nome do relatório" />
+			   placeholder="Digite o nome do relatório"
+			   />
 		<input type="text"
 			   id="description" 
 			   name="description"
 			   class="form-control"
 			   style="width: 50%"
-			   placeholder="Digite a descrição do relatório" />
+			   placeholder="Digite a descrição do relatório"
+			   />
 		<button type="submit">
 		clicka porra bora de BASE</button>
 	</form>
 	
-	<form action="ReportController" method="get">
+	<form action="ReportController" method="get" >
 		<button type="submit">
-		clicka porra bora de HTTP</button>
+		clicka porra bora de BASE LIST</button>
 	</form>
 	
+	
+	<script>
+		
+	</script>
 </div>
 </body>
 </html>
